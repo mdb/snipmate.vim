@@ -206,9 +206,24 @@ snippet select
 		<option value="${3:option}">${4:$3}</option>
 	</select>${5}
 snippet table
-	<table border="${1:0}">
-		<tr><th>${2:Header}</th></tr>
-		<tr><th>${3:Data}</th></tr>
-	</table>${4}
+	<table summary="${1:Summary}">
+		<caption>${2:Caption}</caption>
+		<thead>
+			<tr>
+				<th scope="col">${3:Header}</th>
+				<th scope="col">${4:Header}</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td scope="row">${5:data}</td>
+				<td>${6:data}</td>
+			</tr>
+			<tr>
+				<td scope="row">${7:data}</td>
+				<td>${8:data}</td>
+			</tr>
+		</tbody>
+	</table>${9}
 snippet textarea
 	<textarea name="${1:Name}" rows="${2:8}" cols="${3:40}">${4}</textarea>${5}
