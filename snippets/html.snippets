@@ -155,7 +155,7 @@ snippet base
 snippet r
 	<br`Close()[1:]`>
 snippet div
-	<div id="${1:name}">
+	<div class="${1:name}">
 		${2}
 	</div>
 # Embed QT Movie
@@ -228,3 +228,19 @@ snippet table
 	</table>${9}
 snippet textarea
 	<textarea name="${1:Name}" rows="${2:8}" cols="${3:40}">${4}</textarea>${5}
+snippet ul 
+	<ul class="${1:Class}">
+		<li>${2}</li>
+		${3}
+	</ul>
+snippet li 
+	<li>${1}</li>
+snippet dl 
+	<dl class="${1:Class}">
+		<dt>${2}</dt>
+			<dd>${3}</dd>
+		${4}
+	</dl>
+snippet dt 
+	<dt>${1}</dt>
+		<dd>${2}</dd>
