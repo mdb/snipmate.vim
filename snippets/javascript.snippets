@@ -78,8 +78,23 @@ snippet get
 snippet gett
 	getElementBy${1:Id}('${2}')${3}
 #
-# jQuery stuff
+# Jasmine snippets
+# 
+# describe
+snippet desc
+	describe("${1}", function () {
+			it("${2}", function () {
+					${3}
+			});
+	});
+# it block
+snippet it
+	it("${1}", function () {
+		${2}
+	});
+# jQuery snippets
 #
+# document.ready
 snippet docready
 	$(document).ready(function() {
 		${1}
